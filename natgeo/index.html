@@ -33,53 +33,123 @@
         <div class="header-subtext">
             <p><span>Subscribe</span> for full access to read stories from National Georgaphic.</p>
         </div>
-        <!-- css properties to change: background, flex to center elements, color, border-bottom, hover, margins, font size, letter spacing, container height  -->
+
         <div class="small-line"></div>
     </header>
     
     <main>
-        <img src="images/main-news.webp">
-        <div class="main-news">
-            <h3>Magazine</h3>
-            <p>A diver's hunt for lost slave ships led to an incredible journey</p>
-            <h5> <i class="fas fa-bars"></i> READ</h5>
-        </div>
-        
-        <div class="secondary-news">
-           <div class="secondary-news-image">
-                <image src="images/secondary-news.webp">
-            </div>
-            <div class="secondary-news-text">
-                <p>Into the Depths: A 6-Part series featuring Nat Geo Explorer Tara Roberts</p>
-                <h5><i class="fas fa-bars"></i> READ</h5>
-            </div>
-        </div>
-
-        <div class="secondary-news">
-            <h5>SCIENCE</h5>
-            <div class="secondary-news-image">
-                <image src="images/secondary-dinosaur.webp">
-            </div>
-            <div class="secondary-news-text">
-                <p>First dinosaur found with a respiratory disease</p>
-                <h5><i class="fas fa-bars"></i> READ</h5>
-            </div>
-        </div> 
-
-        
-        <div class="todays-picks-container">
-            <h2>Today's Picks</h2>
-            <div class="pick-item">
-                <div class="pick-item-img">
-                    <!-- add the image -->
+        <div class="news-container">
+            <div class="main-news">
+                <div class="main-news-img">
+                    <img src="images/main-news.webp"> 
                 </div>
-                <div class="pick-item-text">
-                    <h4>Animals</h4>
-                    <p>Most U.S. eagles suffer from lead poisioning, study suggests</p>
+                <div class="main-news-text">
+                    <h3>Magazine</h3>
+                    <p>A diver's hunt for lost slave ships led to an i...</p>
+                    <h5 class="read-btn"> <i class="fas fa-bars"></i> READ</h5>
                 </div>
-            </div> 
+            </div>    
+            <!-- this container wraps the two secondary news -->
+            <div class="secondary-news-container">  
+                <div class="secondary-news">
+                    <div class="secondary-news-image">
+                        <image class="secondary-news-image-dino" src="images/secondary-news.webp">
+                    </div>
+                    <div class="secondary-news-text">
+                        <p>Into the Depths: A 6-Part series featuring Nat Geo Explorer Tara Roberts</p>
+                        <h5><i class="fas fa-bars"></i> READ</h5>
+                    </div>
+                </div>
+
+                <div class="secondary-news">
+                        <div class="secondary-news-image">
+                            <image src="images/secondary-dinosaur.webp">
+                        </div>
+                        <div class="secondary-news-text">
+                            <h4>SCIENCE</h4>
+                            <p>First dinosaur found with a respiratory disease</p>
+                            <h5><i class="fas fa-bars"></i> READ</h5>
+                        </div>
+                </div> 
+            </div>
         </div>
+        <div class="todays-master">
+            <div class="todays-picks-items">
+                <div class="todays-picks-title">
+                    <div class="todays-picks-title-border"></div>
+                    <h2>TODAY'S PICKS</h2>
+                </div>
+                <div class="todays-picks-container">
+                    <div class="pick-item">
+                        <div class="pick-item-img">
+                            <img src="images/pick-item-image.jpg" alt="">
+                        </div>
+                        <div class="pick-item-text">
+                            <h4>HISTORY MAGAZINE</h4>
+                            <p>Egypt's first pharoahs loved catfish-and worshipped them</p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="todays-picks-container"> 
+                    <div class="pick-item">
+                        <div class="pick-item-img">
+                            <img src="images/pick-item-image-2.jpg" alt="">
+                        </div>
+                        <div class="pick-item-text">
+                            <h4>PHOTOGRAPHY BEHIND THE COVER</h4>
+                            <p>What Inspired Tara Roberts to go inoto the depths</p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="todays-picks-container">
+                    <div class="pick-item">
+                        <div class="pick-item-img">
+                            <img src="images/pick-item-image-3.jpg" alt="">
+                        </div>
+                        <div class="pick-item-text">
+                            <h4>SCIENCE CORONAVIRUS COVERAGE</h4>
+                            <p>Do masks really harm kids? Here's what the science says.</p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="todays-picks-container">
+                    <div class="pick-item">
+                        <div class="pick-item-img">
+                            <img src="images/pick-item-image-4.jpg" alt="">
+                        </div>
+                        <div class="pick-item-text">
+                            <h4>MAGAZINE PLANET IMPOSSIBLE</h4>
+                            <p>4 ways to help your local wildlife this spring</p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="todays-picks-container">
+                    <div class="pick-item">
+                        <div class="pick-item-img">
+                            <img src="images/pick-item-image-5.jpg" alt="">
+                        </div>
+                        <div class="pick-item-text">
+                            <h4>MAGAZINE</h4>
+                            <p>The urgent efforts to save winter in the Alps</p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="todays-picks-container">
+                    <div class="pick-item">
+                        <div class="pick-item-img">
+                            <img src="images/pick-item-image-6.jpg" alt="">
+                        </div>
+                        <div class="pick-item-text">
+                            <h4>TRAVEL</h4>
+                            <p>Step back in the time at this Mexico dance hall</p>
+                        </div>
+                    </div> 
+                    <h5><span>SEE MORE</span></h5>
+                </div>
+            </div>
+        </div>
+           
           
-    </main> 
+    </main>
 </body>
 </html>

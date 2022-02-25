@@ -5,42 +5,53 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: black;
 }
 /* 100% makes it take 100% of the windows, nothing more */
 img{
     max-width: 100%;
+    /* max-height: 100%; */
 }
 /* utilities */
-
+.read-btn{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: .625rem;
+    font-weight:700px;
+}
 /* nav */
 .nav-bar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height:38px;
+    height:3rem;
+    background-color: white;
+    font-weight:700;
 }
 .nav-bar img{  
-    height:35px;
-    margin-left:10px
+    height:2.188rem;
+    margin-left:.625;
+    margin-top:auto;
+    margin-bottom: auto;
 }
 
 .links-container{
     display: flex;
     justify-content: space-between;
-    flex-basis: 300px;
+    flex-basis: 18.75rem;
     align-items: center;
 }
 .links-container a{
     text-decoration: none;
     color: black;
     text-transform: uppercase;
-    font-weight: 700px;
-    font-size: 13px;
+    font-weight: 43.75;
+    font-size: .813rem;
     letter-spacing: 5px;
 }
 .links-container .subs-link{
     background-color: black;
-    padding: 15px;
+    padding: .938rem;
     color:white;
 }
 /* add the animation to make the yellow go left to right */
@@ -49,7 +60,7 @@ img{
     color:black;
 }
 .links-container a:last-of-type{
-    margin-right:20px;
+    margin-right:1.25rem;
 }
 .search-link, .renew-link, .menu-link, .logo-bg{
     display:none
@@ -59,31 +70,248 @@ img{
 /* header */
 .header{
     display:flex;
-    height:250px;
+    height:13.438rem;
     flex-direction: column;
     align-items: center;
-    background-color: black;
+    /* background-color: black; */
     color:white;
-    justify-content: space-evenly;
-    letter-spacing: 3px;
+    /* justify-content: space-evenly; */
+    margin-top:2.813rem;
+    letter-spacing: 1.5px;
 }
 .header-text{
-    font-size: 35px;
+    font-size: 1.375rem;
     line-height: 1.5;
 }
 .header-subtext{
-    margin-left:30px;
-    margin-right:30px;
+    text-align: center;
+    /* margin-left:30px; */
+    /* margin-right:30px; */
+    font-weight:500;
+    margin-top:1.563rem;
 }
 .header-subtext span{
-    border-bottom:4px solid #ffcc00;
+    border-bottom:2px solid #ffcc00;
     text-decoration: none;
 }
 .header .small-line{
     background-color: #ffcc00;
-    width:60px;
+    width:2.188rem;
     height: 4px;
-    line-height: 0px;
+    /* line-height: 0px; */
     margin:20px auto 0;
 }
 /* main */
+
+/* .main-news{ The code below is option 1 for background
+    height:400px;
+    background-image: url(images/main-news.webp);
+    background-size: cover;
+    background-position: center center;
+}
+.main-news:hover{
+    transform:scale(1.1);
+}
+*/
+/* option 2 better because of animations, we can configure overflow*/
+
+
+
+.main-news{
+    position:relative;
+    width:95%;
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom:.625rem;
+    
+    
+}
+.main-news-img img{
+    border-bottom:4px solid #ffcc00;
+    border-right:4px solid #ffcc00;
+   
+  
+   
+}
+.main-news-text{
+    position: absolute;
+    top:12.188rem;
+    left:1.875rem;
+
+}
+.main-news-text h3{
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size:.813rem;
+    margin-bottom:7px;
+}
+.main-news-text p{
+    font-size:2.188rem;
+    font-weight:700;
+    color:white;
+    letter-spacing:1px;
+}
+.main-news-text .read-btn{
+    color:white;
+    
+}
+@media(min-width:768px) {
+    main{
+        display:flex;
+        flex-direction: row-reverse;
+        width:55%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .main-news {
+        width: 45rem;
+    }
+    
+    .main-news-text{
+        margin-top:12rem;
+    }
+}
+/* secondary news */
+
+.secondary-news{
+    width:95%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 10px;
+}
+
+.secondary-news-text{
+    background-color: white;
+    height:10rem;
+   text-align: left;
+   margin-top: -5px;
+   padding-top:1em;
+   width:100%;
+}
+.secondary-news-text h4{
+    margin-top:.5rem;           
+    margin-left:20px;
+    color:rgb(24, 23, 23);
+    font-weight: lighter;
+}
+.secondary-news-text p{
+    margin-left:1.25rem;
+    /* margin-top:15px; */
+    font-weight: 800;
+    line-height: 2;
+    font-size: 1.25rem;
+}
+
+.secondary-news-text h5{
+    margin-left:1.563rem;
+    margin-top:1.25rem;
+}
+/* add the height */
+@media(min-width:768px){
+    .secondary-news-container {
+        display:flex;
+        width:45rem;
+        height:32rem;
+        gap: 1rem;
+        margin-right:auto;
+        margin-left:auto;
+    }
+    .secondary-news-text{
+        width:22.2rem;
+    }
+    .secondary-news-image{
+        width: 22.2rem;
+        height: 21rem;
+    }
+    .secondary-news-image img{
+        width:22.2rem;
+        height:21rem;
+    }
+    
+}
+/* Today's Picks */
+.todays-picks-container{
+    display:flex; 
+    color:white;
+    flex-direction: column;
+    font-weight:700;
+    margin-bottom:1.563rem;
+   
+}
+.todays-picks-container h5{
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+.todays-picks-container span{
+    border-bottom: 2px solid #ffcc00;
+}
+.todays-picks-title{
+    height:1.875rem;
+    display:flex;
+    align-items: center;
+    margin:2rem 0;
+    margin-left:1rem;
+    
+}
+.todays-picks-title h2{
+   text-align: left;
+   margin-bottom: 1.25rem;
+   margin-left: 2.5rem;
+   font-size: 2.188rem;
+   letter-spacing: 1.5px;
+   padding-top:15px;
+   color:white;
+
+}
+.todays-picks-title-border{
+    width:5px;
+    height:100%;
+    background-color:#ffcc00;
+    
+}
+
+.todays-picks-container h4{
+    margin-bottom:8px;
+    letter-spacing: 1.5px;
+    /* font-weight: 700; */
+}
+.pick-item{
+    display:flex; 
+    /* justify-content: space-between; */
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.pick-item-img img{
+    width:6.25rem;
+    height:6.25rem;
+    /* margin-right: 20px; */
+}
+.pick-item-text{
+    margin-left:1.25rem;
+    text-align: left;
+    width:20.625rem;
+}
+@media(min-width:768px){
+    .todays-master{
+        margin-top: -2rem;
+        margin-right:1.5rem;
+        width:28rem;
+    }
+    .pick-item{
+        width:25rem;
+        /* margin-bottom: 2rem; */
+        height:8.9rem;
+        /* background-color: red; */
+    }
+   .pick-item-text{
+       width:12rem;
+   }
+   .todays-picks-title{
+       margin-left:0;
+   }
+   .todays-picks-container h5{
+       text-align: left;
+   }
+}
